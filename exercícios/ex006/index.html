@@ -6,13 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dobro, triplo e raiz quadrada</title>
     <style>
-        p{
-            display: inline-block;
-            color: rgb(255, 255, 255);
-            background-color: black;
-            padding: 5px;
+        body{
             font-family: Arial, Helvetica, sans-serif;
-            font-weight: bolder;
         }
 
     </style>
@@ -20,9 +15,10 @@
 <body>
     <script>
         var n = Number(window.prompt('Digite um número:'))
-        document.write(`<p>O dobro de ${n} vale ${n*2}</p> <br>`)
-        document.write(`<p>O triplo de ${n} vale ${n*3}</p> <br>`)
-        document.write(`<p>A raiz quadrada de ${n} vale ${n**(1/2).toFixed(2)}</p>`)
+        var dob = n*2
+        var tri = n*3
+        var rq = n**(1/2)
+        document.write(`<p>O dobro de ${n} vale ${dob}.<br> O triplo de ${n} vale ${n*3}.<br> A raiz quadrada de ${n} vale ${rq.toFixed(2)}</p>`)
     </script>
 </body>
 </html>
